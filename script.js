@@ -63,12 +63,6 @@ var houseH = 80;
 var houseX = roofX+(roofW-houseW)/2;
 var houseY = roofY+roofH;
 
-function preload() {
-
-  img = loadImage('assets/ghost.png'); //200 px
-
-}
-
 function setup() {
   createCanvas(w, h+50);
 }
