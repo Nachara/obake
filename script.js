@@ -73,9 +73,6 @@ function draw() {
 
   stroke(0);
 
-  // drawGhost(ghost_x, ghost_y, 255,150,0,150,5,0,0,ghost_top_w,ghost_bottom_w,ghost_h);
-  // drawGhostExtra(ghost_x, ghost_y, 255, 150);
-
   if(isGhostUp){
     ghost_y += ghost_float_speed;
     if(ghost_y > ghost_margin+ghost_h/2){
@@ -110,7 +107,7 @@ function draw() {
     mouseIsOnTheBox = false;
   }
 
-  if(mouseX >= lightButton_x+lightButton_w/2-lightButton_w/8 && mouseX <= lightButton_x+lightButton_w/2-lightButton_w/8+lightButton_w/4 && mouseY >= lightButton_y+lightButton_h/2-lightButton_h/8 && mouseY <= lightButton_y+lightButton_h/2-lightButton_h/8+lightButton_w/4){
+  if(mouseX >= lightButton_x && mouseX <= lightButton_x+lightButton_w && mouseY >= lightButton_y && mouseY <= lightButton_y+lightButton_h){
     mouseIsOnTheButton = true;
   }else if(mouseX >= window_x && mouseX <= window_x+window_width && mouseY >= window_y && mouseY <= window_y+window_height){
     mouseIsOntheWindow = true;
