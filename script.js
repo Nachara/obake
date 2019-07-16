@@ -64,7 +64,7 @@ var houseX = roofX+(roofW-houseW)/2;
 var houseY = roofY+roofH;
 
 function setup() {
-  createCanvas(w, h+50);
+  createCanvas(w, h);
 }
 
 function draw() {
@@ -363,15 +363,6 @@ function draw() {
     rect(houseX+houseW*1.5/4, houseY+houseH*1.5/4, houseW/4, houseH/4);
 
   }
-  noStroke();
-  fill(255);
-  rect(0,h,w,50);
-  fill(backgroundCol-50);
-  stroke(backgroundCol-50);
-  strokeWeight(1);
-  textSize(20);
-  text('http://web.sfc.keio.ac.jp/~t16384ns/gp19/71643849_final/index.html', 0, h+25);
-
 }
 
 function lightOn(color,a){
